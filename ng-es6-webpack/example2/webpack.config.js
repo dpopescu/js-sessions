@@ -11,10 +11,8 @@ module.exports = {
     context: SRC_SIR,
     entry:{
         vendor: [
-            'jquery',
             'angular',
-            'angular-ui-router',
-            'bootstrap'
+            'angular-ui-router'
         ],
         app: ['index.js']
     },

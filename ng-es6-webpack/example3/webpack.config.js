@@ -11,10 +11,8 @@ module.exports = {
     context: SRC_SIR,
     entry:{
         vendor: [
-            'jquery',
             'angular',
-            'angular-ui-router',
-            'bootstrap'
+            'angular-ui-router'
         ],
         app: ['index.js']
     },
@@ -29,6 +27,11 @@ module.exports = {
     },
     module:{
         loaders:[
+            {
+                test: /\.html$/,
+                loaders: ['raw-loader'],
+                exclude: /node_modules/
+            },
             {
                 test: /\.js$/,
                 loaders: ['babel-loader'],

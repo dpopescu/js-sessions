@@ -1,12 +1,5 @@
 import './index.scss';
 
-import Application from './Application';
-
-const app = new Application('testApp', [
-
-]);
-
-app.start();
-
+import app from './module/app/app.module';
 
 angular.bootstrap(document, [app.name]);
