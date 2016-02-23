@@ -1,0 +1,23 @@
+{
+  "name": "ng-es6-webpack",
+  "version": "1.0.0",
+  "description": "Angular ES6 with Webpack",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dpopescu/js-sessions/ng-es6-webpack"
+  },
+  "keywords": [
+    "Angular",
+    "Webpack",
+    "ES6"
+  ],
+  "author": "Daniel Popescu",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "webpack": "1.12.14",
+    "webpack-dev-server": "1.14.1"
+  }
+}
