@@ -1,10 +1,8 @@
 class Application {
-    constructor(name = 'Default application'){
-        this._name = name;
-    }
-
-    get name(){
-        return this._name;
+    constructor(name = 'myApp', dependencies = []){
+        this.name = name;
+        this.dependencies = dependencies;
+        this._ngRef = angular.module(this.name, this.dependencies);
     }
 
     start(){
