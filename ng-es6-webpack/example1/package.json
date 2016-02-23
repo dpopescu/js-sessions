@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Angular ES6 with Webpack",
   "scripts": {
-    "test": "npm test"
+    "start": "webpack-dev-server --hot --inline --progress --colors"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,11 @@
   "author": "Daniel Popescu",
   "license": "Apache-2.0",
   "devDependencies": {
+    "babel-core": "6.5.2",
+    "babel-loader": "6.2.3",
+    "babel-preset-es2015": "6.5.0",
+    "clean-webpack-plugin": "0.1.8",
+    "html-webpack-plugin": "2.9.0",
     "webpack": "1.12.14",
     "webpack-dev-server": "1.14.1"
   }
