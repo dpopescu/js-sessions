@@ -1,6 +1,6 @@
 <nav class="col-md-2">
     <ul class="nav nav-pills nav-stacked">
-        <li role="presentation" ui-sref-active-eq="active" ng-repeat="item in $ctrl.navItems">
+        <li role="presentation" ui-sref-active="active" ng-repeat="item in $ctrl.navItems">
             <a ui-sref="{{item.stateName}}">{{item.name}}</a>
         </li>
     </ul>

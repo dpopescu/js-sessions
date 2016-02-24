@@ -8,11 +8,11 @@ class SidebarController {
             name: 'Home',
             stateName:'App'
         }, {
-            name: 'Profile',
-            stateName: 'Profile'
+            name: 'Inbox',
+            stateName: 'Inbox'
         }, {
-            name: 'Messages',
-            stateName: 'Messages'
+            name: 'Settings',
+            stateName: 'Settings'
         }];
     }
 }

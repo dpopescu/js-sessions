@@ -1,0 +1,16 @@
+<form>
+    <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" name="author" placeholder="Your name" ng-model="$ctrl.message.author">
+    </div>
+    <div class="form-group">
+        <label for="summary">Summary</label>
+        <input type="text" class="form-control" id="summary" name="summary" placeholder="Short description" ng-model="$ctrl.message.summary">
+    </div>
+    <div class="form-group">
+        <label for="content">Content</label>
+        <textarea name="content" class="form-control" id="content" placeholder="Content goes here" ng-model="$ctrl.message.content"></textarea>
+    </div>
+    <button type="submit" class="btn btn-default" ng-click="$ctrl.save()" ng-if="$ctrl.message.id">Save</button>
+    <button type="submit" class="btn btn-default" ng-click="$ctrl.create()" ng-if="!$ctrl.message.id">Create</button>
+</form>

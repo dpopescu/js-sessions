@@ -1,0 +1,20 @@
+<table class="table">
+    <caption>
+        Messages
+        <button type="submit" class="pull-right btn btn-default btn-primary" ng-click="$ctrl.new()">New</button>
+    </caption>
+    <thead>
+    <tr>
+        <th>#</th>
+        <th>Message</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="message in $ctrl.messages" ng-click="$ctrl.viewMessage(message.id)">
+        <th scope="row">{{message.id}}</th>
+        <td>{{message.summary}}</td>
+        <td>{{message.author}}</td>
+    </tr>
+    </tbody>
+</table>

@@ -6,8 +6,11 @@ import Sidebar from './component/sidebar/Sidebar';
 
 import Home from './view/home/Home';
 
+import inboxModule from 'module/inbox/inbox.module';
+
 const app = new Application('testApp', [
-    'ui.router'
+    'ui.router',
+    inboxModule.name
 ]);
 
 app.registerComponents([
