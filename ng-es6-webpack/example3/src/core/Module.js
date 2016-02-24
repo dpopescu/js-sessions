@@ -5,7 +5,7 @@ export default class Module {
         this._states = new Map();
         this._ngModule = angular.module(this.name, this.dependencies);
         this._ngModule.config(['$urlRouterProvider', '$stateProvider', this.config.bind(this)]);
-        this._ngModule.run([this.run.bind(this)]);
+        this._ngModule.run(['$rootScope', '$state', this.run.bind(this)]);
     }
 
     registerComponents(components){
