@@ -36,4 +36,12 @@ export default class Animal {
     toString(){
         return `[${this.constructor.name}] - ${this.name}, ${this.color}`;
     }
+
+    /**
+     * Say something
+     * @throws {Error} - if method is not implemented
+     */
+    talk(){
+        throw new Error('Not implemented');
+    }
 }

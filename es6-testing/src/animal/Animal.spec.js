@@ -8,7 +8,7 @@ describe("Animal", ()=>{
     });
     
     it("should create a new animal with default name", ()=>{
-        expect(animal.name).toBe('Default Name');
+        expect(animal.name).toBe('DefaultName');
     });
 
     it("should create a new animal with default color", ()=>{
@@ -26,6 +26,10 @@ describe("Animal", ()=>{
     });
 
     it("should provide useful information when calling toString()", ()=>{
-        expect(animal.toString()).toBe('[Animal] - Default Name, white');
-    })
+        expect(animal.toString()).toBe('[Animal] - DefaultName, white');
+    });
+
+    it("should throw an error if talk() is not implemented", ()=>{
+        expect(animal.talk).toThrowError(Error, "Not implemented");
+    });
 });
