@@ -27,12 +27,16 @@ module.exports = function(config){
         webpackServer: {
             noInfo: true
         },
-        reporters: ['mocha'],
+        reporters: ['mocha', 'html'],
+        htmlReporter:{
+            outputDir: OUT_DIR + '/html/'
+        },
         singleRun: true,
         plugins: [
             'karma-jasmine',
             'karma-phantomjs-launcher',
             'karma-mocha-reporter',
+            'karma-html-reporter',
             'karma-webpack'
         ]
     });
