@@ -1,4 +1,5 @@
 {
   "source": "./src",
-  "destination": "./reports/docs"
+  "destination": "./reports/docs",
+  "excludes": ["\\.spec\\.js$"]
 }

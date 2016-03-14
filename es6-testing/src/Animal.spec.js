@@ -6,7 +6,7 @@ describe("Animal", ()=>{
     beforeEach(()=>{
         animal = new Animal();
     });
-
+    
     it("should create a new animal with default name", ()=>{
         expect(animal.name).toBe('Default Name');
     });
