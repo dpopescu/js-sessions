@@ -16,9 +16,14 @@ module.exports = function(config){
             module: {
                 preLoaders: [
                     {
-                        test: /\.js$/,
+                        test: /\.spec\.js$/,
                         loader: 'babel',
                         exclude: /node_modules/
+                    },
+                    {
+                        test: /\.js$/,
+                        loader: 'isparta',
+                        exclude: /test-context\.js|node_modules|\.spec\.js$/
                     }
                 ]
             },
