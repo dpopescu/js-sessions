@@ -1,5 +1,5 @@
 export default class Animal {
-    constructor(name, color) {
+    constructor(name='Default Name', color='white') {
         this._name = name;
         this._color = color;
     }
@@ -9,7 +9,7 @@ export default class Animal {
     }
 
     get color() {
-        return this.color;
+        return this._color;
     }
 
     toString(){
