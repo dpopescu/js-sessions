@@ -27,9 +27,20 @@ module.exports = function(config){
         webpackServer: {
             noInfo: true
         },
-        reporters: ['mocha', 'html'],
+        reporters: ['mocha', 'html', 'coverage'],
         htmlReporter:{
             outputDir: OUT_DIR + '/html/'
+        },
+        coverageReporter:{
+            reporters:[
+                {
+                    type:'text-summary'
+                },
+                {
+                    type:'html',
+                    dir: OUT_DIR + '/coverage'
+                }
+            ]
         },
         singleRun: true,
         plugins: [
@@ -37,6 +48,7 @@ module.exports = function(config){
             'karma-phantomjs-launcher',
             'karma-mocha-reporter',
             'karma-html-reporter',
+            'karma-coverage',
             'karma-webpack'
         ]
     });
